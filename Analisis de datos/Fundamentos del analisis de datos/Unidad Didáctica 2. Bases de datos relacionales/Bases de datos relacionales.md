@@ -2759,3 +2759,32 @@ Cantidad media de piezas suministrada a aquellos proveedores que venden la pieza
 select codpro,avg(cantidad) 'media' from ventas where (codpie='P3') group by codpro;
 
 ![SQL Fiddle](images/sqlfiddle18.png)
+
+
+> Recuerda
+
+- A partir de la necesidad de almacenar grandes cantidades de datos, las industrias desarrollaron un sistema de bases de datos automatizado, para su posterior consulta.
+- Entendemos una base de datos como un almacén de información donde se organizan los datos de manera que luego podamos acceder a ellos lo más rápidamente posible.
+- Los datos han sido y serán la parte más importante de cualquier organización y hay que preservarlos y gestionarlos debidamente para un buen funcionamiento del sistema.
+- Como los usuarios de una base de datos no tienen por qué conocer cómo están organizados y almacenados los datos, ésta tiene que presentar los datos de forma que el usuario pueda interpretarlos y modificarlos.
+- DML(Data Manipulation Language) es el lenguaje que permite a los usuarios, por medio de consultas, operar con los datos de la base de datos.
+- Un Sistema Gestor de Base de Datos(DBMS, siglas en inglés de Data Base Management System) es un conjunto de herramientas ideadas para gestionar las bases de datos. Se compone de un lenguaje para definición de bases de datos(DDL) y otro para manipulación de los datos(DML), usando para ello el lenguaje de consultas SQL.
+- La persona responsable de gestionar el correcto funcionamiento de la base de datos y de los usuarios que la manipulan es el administrador de la base de datos(DBA, siglas en inglés de Data Base Administrator).
+- El usuario de una base de datos es toda aquella persona que, de manera consciente o inconsciente, interactúa con la base de datos.
+- Una base de datos está compuesta, esencialmente, por tablas. Tablas entre las que pueden existir una serie de relaciones que definirán el tipo de estructura de la base de datos.
+- El modelo entidad-relación, nos proporciona un método de modelado de datos basado en la representación de entidades, u objetos, diferenciados claramente entre sí.
+- Las entidades representadas en el diagrama entidad-relación, hacen referencia a objetos, de la vida real o abstractos, diferenciados unívocamente entre sí, con una serie de propiedades o atributos.
+- La propiedad que identifica una ocurrencia de un objeto en concreto, de las demás ocurrencias de ese mismo objeto, se llama atributo identificados o ID.
+- Los atributos de un objeto son aquellas características propias de la entidad que la identifican y definen.
+- Con restricción de integridad nos referimos a uno de los aspectos más importantes a la hora de mantener la consistencia de los datos en una base de datos.
+- Un dominio, dicho de otra forma, es una restricción impuesta a un determinado atributo, determinándolo a estar encuadrado en una escala de valores.
+- La cardinalidad indica el grado de participación de cada entidad en una relación.
+- El lenguaje de consulta SQL (siglas en inglés de “Structured Query Language”, que significa "Lenguaje de Consulta Estructurado"), es el lenguaje más usado y estandarizado para acceder a bases de datos relacionales. A partir de la propuesta del modelo relacional nace, vinculado a éste, un sublenguaje de acceso a los datos, fundamentado en el cálculo de predicados.
+- En SQL, el Lenguaje de Definición de Datos o DDL sirve para definir estructuras de almacenamiento, y por tanto para crear esquemas conceptuales.
+- El diccionario de datos contiene información relevante o metadatos sobre los datos que se almacenan en la base de datos, y por tanto estos datos también se almacenarán como el resto de datos, en la propia base de datos, pero sólo el sistema o un usuario concreto podrá mantener estos datos.
+- En general, podemos decir que la integridad de los datos se refiere a que los datos deben ser datos correctos y estar completos, englobando por supuesto las características de los datos como: definiciones, fechas, reglas que les afecten, etc.
+- Entre las reglas de integridad del modelo podemos destacar:
+    - Regla de unicidad de clave primaria, es decir, la clave primaria que se elija para una tabla debe ser única para cada registro, por tanto, no puede haber valores repetidos en el conjunto de valores de la clave primaria.
+    - Regla de entidad de la clave primaria, que quiere decir que el valor nulo no puede ser un valor válido para la clave primaria.
+    - Regla de integridad referencial, que quiere decir que los valores que tomen las claves externas tienen que ser valores que existan en la clave primaria a la que hacen referencia o ser nulos.
+    - Regla de integridad de dominio, que a grandes rasgos se refiere a la definición del conjunto de posibles valores que puede tomar un determinado campo de una tabla y los operadores que pueden operar con dichos valores. Esto determinará la integridad del dominio del campo.
